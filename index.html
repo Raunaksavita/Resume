@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raunak's Portfolio</title>
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/1f4af.svg">
+</head>
+<style>
+    #element
+    {
+        color:rgb(0, 255, 255);
+    }
+    body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+
+    }
+    
+    .button
+    {
+        padding:50px 0;
+        color: rgb(127, 255, 182);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 85px;
+        background-color: rgb(7, 7, 52);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color:azure
+    }
+    nav ul li a:hover{
+        font-size: 1.5rem;
+        color:aqua;
+    }
+
+    .left {
+        font-size: 2rem;
+    }
+
+    .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px 0;
+    }
+    .firstsection  >div{
+        width: 30%;
+
+    }
+ .leftsection {
+        width: 34px;
+        font-size: 3rem;
+        margin: 65px 0;
+
+    }
+    .leftsection .btn
+    {
+        padding:12px;
+        background-color:rgb(52, 235, 213);
+        font-size: 1rem;
+
+    }
+    .rightsection img
+    {
+       width: 110%;
+       margin:50px 0;
+      
+    }
+    .download
+    .purple
+    {
+        color: rgb(148, 70, 222);
+    }
+    .right{
+        font-size: 135%;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Raunak's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="\">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="\">Projects</a></li>
+                    <li><a href="\">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, my name is <span class="purple">
+                Raunak</span> <div>I am a  Passionate</div>  
+               
+               <span id="element"></span>
+               <div class="button">
+              
+               <button class="btn" download="resume.html"><a download="resume" href="resume.html" download>Download Resume</a></button>
+               </div>
+
+            </div>
+            <div class="rightsection"><img src="img.png"></div>
+        </section>
+       
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Graphic Designer','Web Designer','Video Designer'],
+          typeSpeed: 50,
+        });
+      </script>
+
+
+</body>
+
+</html>

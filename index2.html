@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raunak's Resume</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    body {
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        min-height: 1000px;
+        display: grid;
+        margin: 50px;
+        grid-template-columns: 1fr 2fr;
+        box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+        background: #fff;
+    }
+
+    .leftside {
+        position: relative;
+        background: #003147;
+        padding: 40px;
+
+    }
+
+    .profiletext {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0, 2);
+
+    }
+
+    .imgbox {
+        height: 10%;
+        width: 10%;
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+
+    }
+
+    .imgbox {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .imgbox img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .icon {
+    color: #03a9f4;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+ .language .text {
+    color: aliceblue;
+    font-size:1.2rem;
+    margin-left: 10px; 
+    text-decoration: none;
+}
+
+
+    .phototext {
+        color: rgb(120, 245, 37);
+    }
+
+    .rightside {
+        position: relative;
+        background: #fff;
+        padding: 40px;
+    }
+    
+
+    h2 {
+        margin: 8%;
+        color: aliceblue;
+        
+    }
+    .li
+    {
+        margin: 5%;
+        letter-spacing: 1px;
+        
+        text-decoration: none;
+    }
+
+    hr {
+        height: 0.5%;
+        color: aqua;
+        width: 120%;
+        margin: 5%;
+    }
+    .contactinfo ul li
+    {
+        list-style: none;
+        position: relative;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+    
+    .contactinfo ul
+    {
+        position: relative;
+    }
+    .title2
+    {
+    text-align: left;
+    color: rgb(3,119,252);
+    font-size: 2rem;
+    }
+    .title3
+    {
+        font-size: 1.5rem;
+        margin-left: auto;
+    }
+    .name
+    {
+        color: rgb(158, 18, 158);
+        font-size: 1.2rem;
+        letter-spacing: 1%;
+        margin: 40px;
+    }
+    h3
+    {
+        color: rgb(65, 252, 3);
+    }
+    h4
+    {
+        color:aliceblue;
+        letter-spacing: 1px;
+    }
+    .percent
+    {
+      
+    position: relative;
+    width: 100%;
+    height: 6%;
+    background:#f00;
+    display: block;
+    margin-top: 5px;
+        
+    }
+    
+    .a
+    {
+        margin-left: auto; 
+        color:black;
+        width:102%;
+        height: 0.5rem;
+        margin-top:10%;
+        background-color: rgba(0, 0, 0, 0.566);
+
+    }
+    .b{
+        margin-top:1px;
+        width:102%;
+        height:2.4%;
+        font-size:1.2rem;
+        background-color: rgba(0, 0, 0, 0.237);
+    }
+
+    .c
+    {
+ margin-top: 2%;
+ font-size:1.2rem;
+ letter-spacing: 1px;
+    }
+    .d 
+    {
+        background-color: rgba(0, 0, 0, 0.237);
+        font-size:1.2rem;
+        margin-top:4%;
+        width:102%;
+        height:2.4%;
+    }
+    .e
+    {
+        font-size: 3%;
+        margin-top:3%;
+        letter-spacing:1.2px;
+    }
+    .f 
+    {
+        margin-top:3%;
+        width:102%;
+        height:2.4%;
+        font-size:1.2rem;
+        background-color: rgba(0, 0, 0, 0.237);
+    }
+    .g 
+    {
+        margin-top: 2%;
+        font-family:sans-serif;
+        letter-spacing:1.2px;
+    }
+    .h{
+
+     margin-top:3%;
+        width:102%;
+        height:2.4%;
+        font-size:1.2rem;
+        background-color: rgba(0, 0, 0, 0.237);
+    }
+    .i{
+        margin-top: 3%;
+        font-size: 1.1rem;
+        letter-spacing :1px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="leftside">
+            <div class="profiletext">
+
+                <div class="imgbox">
+                    <img src="bg.jpg" alt="picture">
+                </div>
+                <h2>Raunak Savita <br><span class="phototext">Web Developer</span></h2>
+
+                <hr>
+            </div>
+            <div class="contactinfo">
+                <h2 class="title3">Contact Info</h3>
+                <ul>
+                    <li><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">+1 234 5678 900</span>
+                    </li>
+                    <li><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">s4382493@gmail.com</span>
+                    </li>
+                    <li><span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </span>
+                        <span class="text"> www.linkedin.com</span>
+                    </li>
+                    <li><span class="icon"><i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        </span>
+                        <span class="text"> kanpur,luckhnow,jhansi</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contactinfo education">
+                <h2 class="title3">EDUCATION</h2>
+                <ul>
+                    <li>
+                        <h3>2020-2021</h3>
+                        <h4>High School</h4>
+                        <h4>Kailash Vidya Lok Inter College</h4>
+                    </li>
+                    <li>
+                        <h3>2022-2023</h3>
+                        <h4>Intermidiate</h4>
+                        <h4>Kailash Vidya Lok Inter College</h4>
+                         </li>
+                    <li>
+                        <h3>2023-2026</h3>
+                        <h4>Bacheolar Of Computer Apllication</h4>
+                        <h4>Allenhouse Business school</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="language">
+                <h2 class="title3">Languages</h2>
+                <ul>
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percent"></span>
+                    </li>
+                    <li>
+                        <span class="text">Hindi</span>
+                        <span class="percent"></span>
+                    </li></ul></div></div>
+        <div class="rightside">
+                <h1 class="title2">Profile</h1>
+                <div class="name">
+               <p><b>Raunak Savita</b></p>
+               <p>Add:-VPO Mardanpur</p>
+               <p>Uttar pradesh-208001</p>
+               <p><b>Mobile no:</b>9335706160</p>
+               
+                </div>
+                <hr class="a">
+                <div class="b"><b>CAREER OBJECTIVE</b></div>
+                <p class="c">To, build career in a growing organization,where i can get the opportunities to prove my abilities by accepting challenges fulfilling
+                     the organizationl goal and climb the career laddder through continuous learning and commitment.
+                </p> 
+                 <div class="d"><b>ACADEMIC QUALIFIATION</b></div>
+                <p class="e">
+                <ul>
+                    <li>
+                    <h3>10th Passed From UP Board </h3></li><li>
+                    <h3>12th Passed From UP Board</h3>
+                </li>
+            </ul>
+                    
+        </p>
+            <div class="f"><b>PERSONAL SKILL</b></div>
+            <div class="g">
+                <ul><li>Honesty</li></ul>
+                <ul><li>Accepting Challenges</li></ul>
+            </div>
+            <div class="h"><b>PERSONAL PROFILE</b></div>
+            <div class="i">
+                <ul><li>
+                    <b>Father's Name:</b> Sh.Brajesh Kumar Savita
+                </li></ul>
+                <ul><li>
+                    <b>Date of Birth:</b> 01/07/2005
+                </li></ul>
+                <ul><li>
+                    <b>Sex:</b> Male
+                </li></ul><ul><li>
+                    <b>Marital Status:</b> Unmarried
+                </li></ul>
+                <ul><li>
+                    <b>Language Known:</b> Hindi,English
+                </li></ul>
+                <ul><li>
+                    <b>Nationality:</b> Indian
+                </li></ul>
+            </div>
+           
+        
+    </div>
+</body>
+</html>
